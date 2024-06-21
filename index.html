@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set the character encoding to UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Set the viewport 
+     to ensure the page scales correctly on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the title of the web page -->
+    <title>Space Invaders</title>
+    <style>
+        /* Remove the default margin of the body and center the content 
+        both vertically and horizontally */
+        body {
+            margin: 0;  /* Remove default margin */
+            display: flex; /* Use flexbox for layout */
+            justify-content: center;  /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 100vh; /* Set height to 100% of viewport height */
+            background: #2c2c2f; /* Set background color to black */
+        }
+        /* Style the game container */
+        #game-container {
+            position: relative; /* Set position for child positioning */
+            background: #111; /* Set background color */
+            padding: 20px; /* Add padding around the container */
+            border: 2px solid white; /* Add a white border */
+            display: flex; /* Use flexbox for layout */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+        }
+        /* Style the canvas element */
+        canvas {
+            display: block; /* Make canvas a block element */
+            background: #111; /* Set background color */
+        }
+    </style>
+</head>
+<body>
+    <!-- Create a container for the game canvas -->
+    <div id="game-container">
+        <!-- Create a canvas element for the game with specific dimensions -->
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+    </div>
+    <!-- Include the main JavaScript module -->
+    <script type="module" src="main.js"></script>
+</body>
+</html>
